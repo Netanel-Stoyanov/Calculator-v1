@@ -1,0 +1,277 @@
+@font-face {
+    font-family: Inter;
+    src: local('Inter-Medium'), url(../asset/font/Inter-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Inter;
+    src: local('Inter-SemiBold'), url(../asset/font/Inter-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal
+}
+
+body {
+    margin: 0;
+    background: none;
+}
+
+.main-container {
+    width: 612px;
+    height: 546px;
+    border-radius: 10px;
+    display: flex;
+    background: white;
+}
+
+.calculator-container {
+    width: 59.151%;
+    height: 100%;
+    background-color: #2E2E2E;
+}
+
+.history-container {
+    width: 40.85%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    min-height: 546px;
+}
+
+.calculator-header {
+    margin-top: 16px;
+    margin-left: 23px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: #F3F3F3;
+}
+
+.calculator-input {
+    margin-left: 23px;
+    height: 85px;
+    width: 81.8%;
+    margin-top: 2px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    cursor: default;
+    display: flex;
+    align-items: center;
+}
+
+.calculation-text {
+    color: white;
+    font-size: 70px;
+    line-height: 85px;
+}
+
+
+.calculator-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 73%;
+    margin-left: 21px;
+}
+
+.row {
+    display: flex;
+}
+
+.gray-button {
+    height: 70px;
+    width: 70px;
+    background-color: #6F6D6D;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gray-button:hover {
+    background-color: #A9A9A9;
+}
+
+.button-input {
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31px;
+    text-align: center;
+    color: white;
+}
+
+.ml {
+    margin-left: 12px;
+}
+
+.blue-button {
+    height: 70px;
+    width: 70px;
+    background-color: #2295FF;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blue-button:hover {
+    background-color: #62B4FF;
+}
+
+.white-button-input {
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31px;
+    text-align: center;
+    color: black;
+}
+
+.row-ml {
+    margin-left: 1px;
+}
+
+.row-mt {
+    margin-top: 12px;
+}
+
+.white-button {
+    height: 70px;
+    width: 70px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.white-button:hover {
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.white-button:hover .white-button-input {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.mb-img {
+    margin-bottom: 12px;
+}
+
+.mt-comma {
+    margin-top: 10px;
+}
+
+.mb-even {
+    margin-bottom: 3px;
+}
+
+.zero {
+    height: 70px;
+    width: 152px;
+    border-radius: 100px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.zero:hover {
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.zero-input {
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+    color: black;
+    margin-left: 25px;
+
+}
+
+.zero:hover .zero-input {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.history-header {
+    height: 48px;
+    width: 142px;
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: #393939;
+    cursor: default;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.history-description {
+    height: 38px;
+    width: 213px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    color: #393939;
+    margin-left: 20px;
+    cursor: default;
+}
+
+.history-element-container {
+    min-height: 400px;
+    margin-left: 19px;
+    margin-top: 14px;
+    width: 85%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.history-element-container::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.history-element {
+    margin-top: 17px;
+    display: flex;
+    border-bottom: 1px solid #ACACAC;
+    width: 210px;
+}
+
+.calculation {
+    margin-bottom: 10px;
+    margin-left: 8px;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: black;
+    cursor: default;
+}
+
+.img-arrow-history {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+

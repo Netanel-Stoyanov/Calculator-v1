@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/PopUp.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="calculator-container">
+        <div class="calculator-header">
+            Calculator Online
+        </div>
+        <div id="calculator-input" dir="rtl" class="calculator-input">
+            <div id="calculation-text" class="calculation-text"></div>
+        </div>
+        <div class="calculator-buttons">
+            <div class="row">
+                <div id="c-button" class="gray-button">
+                    <div class="button-input">
+                        C
+                    </div>
+                </div>
+                <div id="negative-button" class="gray-button ml">
+                    <img src="../asset/image/negative.svg" alt="negative"/>
+                </div>
+                <div id="prosent-button" class="gray-button ml">
+                    <div class="button-input">
+                        %
+                    </div>
+                </div>
+                <div id="divide-button" class="blue-button ml">
+                    <img src="../asset/image/divide.svg" alt="divide"/>
+                </div>
+            </div>
+            <div class="row row-ml row-mt">
+                <div id="seven-button" class="white-button">
+                    <div class="white-button-input">
+                        7
+                    </div>
+                </div>
+                <div id="eight-button" class="white-button ml">
+                    <div class="white-button-input">
+                        8
+                    </div>
+                </div>
+                <div id="nine-button" class="white-button ml">
+                    <div class="white-button-input">
+                        9
+                    </div>
+                </div>
+                <div id="multi-button" class="blue-button ml">
+                    <div class="button-input">
+                        <img src="../asset/image/x.svg" alt="x"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-ml row-mt">
+                <div id="four-button" class="white-button">
+                    <div  class="white-button-input">
+                        4
+                    </div>
+                </div>
+                <div id="five-button" class="white-button ml">
+                    <div class="white-button-input">
+                        5
+                    </div>
+                </div>
+                <div id="six-button" class="white-button ml">
+                    <div class="white-button-input">
+                       6
+                    </div>
+                </div>
+                <div id="minus-button" class="blue-button ml">
+                    <div class="button-input mb-img">
+                        <img src="../asset/image/-.svg" alt="-"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-ml row-mt">
+                <div id="one-button" class="white-button">
+                    <div  class="white-button-input">
+                        1
+                    </div>
+                </div>
+                <div id="two-button" class="white-button ml">
+                    <div class="white-button-input">
+                        2
+                    </div>
+                </div>
+                <div id="three-button" class="white-button ml">
+                    <div class="white-button-input">
+                        3
+                    </div>
+                </div>
+                <div id="plus-button" class="blue-button ml">
+                    <div class="button-input">
+                       <img src="../asset/image/+.svg" alt="+"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-ml row-mt">
+                <div id="zero-button" class="zero">
+                    <div class="zero-input">
+                        0
+                    </div>
+                </div>
+                <div id="comma" class="white-button ml">
+                    <div class="white-button-input mt-comma">
+                        <img id="comma-img" src="../asset/image/comma.svg" alt=","/>
+                    </div>
+                </div>
+                <div id="even-button" class="blue-button ml">
+                    <div class="button-input">
+                        <img class="mb-even" src="../asset/image/even.svg" alt="="/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="history-container">
+        <div class="history-header">
+            History
+        </div>
+        <div class="history-description">
+            Click to the equation to return it to the calculator
+        </div>
+        <div id="history-container" class="history-element-container"></div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/PopUp.js"></script>
+</body>
+</html>

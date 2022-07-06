@@ -1,0 +1,33 @@
+{
+  "name": "Calculator V1",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "./asset/image/icon_128.png",
+    "24": "./asset/image/icon_128.png",
+    "32": "./asset/image/icon_128.png",
+    "48": "./asset/image/icon_128.png",
+    "128": "./asset/image/icon_128.png"
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+  "action": {
+    "default_icon": "./asset/image/icon_128.png",
+    "default_popup": "./html/PopUp.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "js/ContentScript.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  }
+}
