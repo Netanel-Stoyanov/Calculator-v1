@@ -32,7 +32,12 @@
   },
   "web_accessible_resources": [
     {
-      "resources": [ "asset/image/calculate-img.svg" ],
+      "resources": [ "asset/image/calculate-img.svg",
+        "asset/image/calculate-hover.svg",
+        "asset/image/extension-image.svg",
+        "asset/image/selector.svg",
+        "asset/image/tri.svg"
+      ],
       "matches": [
         "<all_urls>"
       ]
