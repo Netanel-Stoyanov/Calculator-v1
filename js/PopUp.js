@@ -27,6 +27,7 @@ let noEven = false;
 let Clicked = false;
 let evenClicked = false;
 
+
 function createHistoryElement(value) {
     const historyContainer = document.getElementById("history-container");
 
@@ -49,13 +50,20 @@ function createHistoryElement(value) {
 
     const calculationString = document.createElement("div");
     calculationString.classList.add("calculation");
-    calculationString.innerHTML = value;
+    if (value.length >= 15) {
+        calculationString.innerHTML = value.replace(/.{15}/g, '$&\n')
+    } else {
+        calculationString.innerHTML = value;
+    }
+
 
     historyElement.appendChild(arrowImg);
     historyElement.appendChild(calculationString);
 
     historyContainer.insertAdjacentElement('afterbegin', historyElement);
 }
+
+
 
 function putHistoryElementToUi() {
     chrome.storage.local.get("history", (result) => {

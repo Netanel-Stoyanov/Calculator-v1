@@ -29,5 +29,13 @@
   ],
   "background": {
     "service_worker": "js/background.js"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "asset/image/calculate-img.svg" ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
 }
